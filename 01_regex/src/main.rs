@@ -6,7 +6,6 @@ fn match_here(regexp: &[char], text: &[char]) -> bool {
     }
 
     if regexp[0] == '$' && regexp.len() == 1 {
-        println!("text: {:?}", text);
         return text.is_empty();
     }
 
